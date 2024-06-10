@@ -75,6 +75,7 @@
 .article-container {
   display: flex;
   justify-content: space-between;
+  /* flex-direction: column; */
   gap: 20px;
   padding-top: 10px;
 }
@@ -103,20 +104,46 @@
   margin-top: 6px;
   padding: 10px 12px 18px 12px;
 }
-.article-text h6 {
-  font-size: 17px;
+.article-text .title {
+  font-size: 20px;
   font-weight: 700;
   margin: 0;
   margin-bottom: 10px;
   color: #0c7034;
 }
+.article-text .title span {
+ color: #000000;
+ font-size: 14px;
+ font-weight: 500;
+}
 .article-text p {
   margin: 0;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 15px;
 }
 .article-text p a {
   color: blue;
   font-weight: 300;
   font-size: 15px;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.pagination button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #18ae54;
+  color: #ffffff;
+  font-size: 15px;
+  border-radius: 4px;
+}
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
